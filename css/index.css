@@ -78,7 +78,11 @@ header img{
     align-items: center;
     gap: 7px;
     font-size: 12px;
+    background-color: rgba(255, 255, 255, 0.2); /* Light background color */
+    padding: 5px; /* Optional, if you want space around the text */
 }
+
+  
 .home-content p a{
 
     color:black;
