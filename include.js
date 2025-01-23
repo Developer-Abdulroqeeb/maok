@@ -12,7 +12,7 @@ header.innerHTML = `
       <ul class="dropdown">
         <li>
        <a href="procure.html"> General Procurement</a></li>
-        <li><a href="apcic.html">APCIC</a></li>
+        <li><a href="apcic.html">EPCIC</a></li>
         <li>fire Detection Protection</li>
         <li>Safety</li>
       </ul>

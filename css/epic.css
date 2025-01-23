@@ -90,49 +90,87 @@ body{
  background-color: #fbdda1;
  padding: 10px;
 }
-
+.structural{
+    margin-top: 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+}
+/* Contact Section */
+.contact-section {
+    display: flex;
+  width:100%;
+    background-color: #002147;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 30px;
+  }
+  
+  .contact-content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .contact-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+  }
+  
+  .contact-content p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .contact-content a {
+    color: #4CAF50;
+    text-decoration: none;
+  }
+  
+  .contact-content a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Contact Image */
+  .contact-image {
+    flex: 1;
+    overflow: hidden;
+  }
+  
+  .contact-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 @media screen and (max-width:768px){
-    .synopsis{
-        flex-direction:column;
-        padding:10px;
-    }
-    .synopsis_image img{
-        width: 90vw;
-    }
-    .year_existence{
-        margin-top:10px;
-        flex-direction:column;
-        gap:0;
-        gap: 3rem;
-        font-size: 15px;
-        padding:2rem;
-    }
-
-    .year_existence img{
-        width: 90vw;
-    }
-    .mission-vision{
-        margin-top: 1rem;
-        padding:0 2rem;
-    }
-    .mission-vision h1{
-        font-weight: bold;
-        font-size: 1.3rem;
-        color: rgb(19, 19, 81);
-    }
-    .mission-vision p{
-        font-size:15px;
-    line-height:1.5rem;
-    }
-    .Procurement{
-        flex-direction:column;
-        gap:2rem;
-    }
-    .Procurement ul{
-        width:90vw;
-    }
-    .Procurement img{
-        width:100vw;
-        height:100vw;
-    }
+  .engineering{
+    flex-direction: column;
+  }
+  .engineering p {
+    font-size: 12px;
+    line-height: 1rem;
+  }
+  .engineering img {
+    width: 100%;
+  }
+.listing-work{
+    flex-direction: column-reverse;
+}
+.fabrication{
+    flex-direction: column;
+}
+.offshore{
+    flex-direction: column;
+    padding:0 20px;
+}
+.structural{
+    flex-direction: column;
+}
+.structural img{
+    width: 100vw;
+}
+.contact-section{
+    flex-direction: column;
+}
 }
