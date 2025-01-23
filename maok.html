@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log in</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    background-image: url(Engineering\,\ Procurement\,\ Construction\,\ Installation\ &\ Commissioning\ \(EPCIC\)General\ Services.jpg);
+    font-size: sanserif;
+}
+header{
+    display:flex;
+    justify-content:space-between;
+    width: 90vw;
+    padding: 9px;
+    align-items: center;
+     position: absolute;
+}
+header img{
+    width: 20%;
+}
+.mid-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   width: 100%;
+   height: 90vh;
+}
+.mid-text h1{
+    color: white;
+    border: 2px solid white;
+    padding: 7px;
+    font-size: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.active{
+    display: none;
+}
+.active.show{
+    display: block;
+}
+.home{
+   
+    display: flex;
+    gap: 20px;
+    background-color: rgb(74, 73, 73);
+    color: white;
+    padding: 0 8px;
+    justify-content: flex-end;
+
+}
+.home-content p{
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    font-size: 12px;
+}
+.home-content p i{
+    font-size: 10px;
+}
+#bar{
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(203, 26, 26);
+}
+    </style>
+</head>
+
+<body>
+<header>
+ 
+    <img src="_of Mao-Oak Resources Limited.png" alt="" srcset="">
+    <div class="home">
+  <div class="home-content">
+    <p  class=""><i class="fa fa-home"></i> Home</p>
+    <div id="active" class="active">
+    <p> <i class="fa fa-users"></i> About</p>
+    <p>Service</p>
+    <p>Products</p> 
+<p>Contact</p>
+</div>
+  </div> 
+<i id="bar" class="fa fa-bars"></i>
+<!-- <p id="bar">bar</p> -->
+    </div>
+
+</header>
+<div class="mid-text">
+    <div class="text_content">
+    <h1>Welcome to Mao-Oak Resources Limited!</h1>
+    <p>Discover our innovative solutions tailored to meet your needs</p>
+</div>
+</div>
+ <script>
+    const bar = document.getElementById('bar');
+    const active = document.getElementById("active");
+    bar.addEventListener('click',function(){
+        active.classList.toggle('show');
+    })
+ </script>
+</body>

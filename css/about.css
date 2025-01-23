@@ -1,0 +1,165 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    box-sizing: 0;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: "Poppins", serif;
+  /* background-color: green; */
+    font-style: normal;
+}
+
+.synopsis{
+    margin-top: 5rem;
+    display: flex;
+  justify-content:space-between;
+  padding:0 3.5rem;
+  gap: 3rem;
+}
+.synopsis_image img{
+    width: 50vw;
+}
+.year_existence{
+    margin-top: 5rem;
+    display: flex;
+  justify-content:space-between;
+  align-items: center;
+  padding:0 3.5rem;
+  gap: 3rem;
+  font-size: 25px;
+}
+.year_existence img{
+    width: 40vw;
+}
+.mission-vision{
+    margin-top: 5rem;
+    padding:0 3.5rem;
+}
+.mission-vision h1{
+    font-weight: bold;
+    font-size: 3rem;
+    color: rgb(19, 19, 81);
+}
+.mission-vision p{
+    font-size: 20px;
+    line-height: 2.2rem;
+}
+.Procurement{
+    margin: 3rem 0;
+    
+    display: flex;
+    align-items: center;
+    /* justify-content: space-between; */
+}
+.Procurement ul{
+    list-style-type: none;
+    background-color:#fbdda1;
+    padding:30px 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 40vw;
+}
+.Procurement img{
+    width: 40vw;
+    height: 18.5vw;
+}
+.engineering{
+    padding:0 3.5rem;
+    margin-top: 30px;
+}
+.engineering h1{
+    font-size: 3rem;
+}
+.engineering p{
+    font-size: 20px;
+    line-height: 2rem;
+    margin-top: 20px;
+}
+.capabilities{
+    padding:0 3.5rem;  
+    margin-top: 2rem;
+}
+.listing-work{
+    padding:0 3.5rem;
+    margin-top: 3rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.continue_list{
+    padding:0 3.5rem;
+    margin-top: 3rem;
+}
+.colored{
+    margin-top: 20px;
+    background-color: #fbdda1;
+    padding: 30px 10px;
+}
+.fabrication{
+    padding:0 3.5rem;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3rem;
+}
+.fabrication img{
+    width: 80vw;
+}
+.offshore{
+    padding:0 3.5rem;
+    margin-top: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 90vw;
+    gap: 7rem;
+}
+.offshore img{
+    width: 100vw;
+} 
+@media screen and (max-width:768px){
+    .synopsis{
+        flex-direction:column;
+        padding:10px;
+    }
+    .synopsis_image img{
+        width: 90vw;
+    }
+    .year_existence{
+        margin-top:10px;
+        flex-direction:column;
+        gap:0;
+    }
+    .year_existence img{
+        width: 90vw;
+    }
+    .mission-vision{
+        margin-top: 5rem;
+        padding:0 3.5rem;
+    }
+    .mission-vision h1{
+        font-weight: bold;
+        font-size: 3rem;
+        color: rgb(19, 19, 81);
+    }
+    .mission-vision p{
+        font-size: 20px;
+    line-height:none;
+    }
+    .Procurement{
+        flex-direction:column;
+        gap:2rem;
+    }
+    .Procurement ul{
+        width:90vw;
+    }
+    .Procurement img{
+        width:100vw;
+        height:100vw;
+    }
+}
