@@ -85,6 +85,12 @@ body{
     width: 100%;
     margin-top: 2rem;
 }
+.engr_services h1{
+ text-transform: uppercase;
+ background-color: #fbdda1;
+ padding: 10px;
+}
+
 @media screen and (max-width:768px){
     .synopsis{
         flex-direction:column;

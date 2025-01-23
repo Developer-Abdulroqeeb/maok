@@ -48,8 +48,11 @@ header img{
     box-shadow:2px 2px 2px 2px rgb(238, 230, 290);
     text-align:center;
     padding:10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     /* background-color:2px 2px 2px 2px rgb(238, 230, 290); */
-    margin:2rem 9rem;
+    /* margin:2rem 9rem; */
     color: white;
     font-weight: bold;
 }
