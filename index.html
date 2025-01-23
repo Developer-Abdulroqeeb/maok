@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>index</title>
+    <link rel="stylesheet" href="css/indexs.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <style>
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+background-image:url(image/12.png);
+
+ background-repeat:no-repeat;
+ background-size:cover;
+} 
+    </style>
+</head>
+
+<body>
+<header>
+  <div class="logo">
+  <img src="image/_of_Mao-Oak_Resources_Limited-removebg-preview (1).png">
+  </div>
+    <div class="home">
+  <div class="home-content">
+    <p  class=""><i class="fa fa-home"></i> Home</p>
+    <div id="active" class="active">
+    <p> <a href="contact.html"><i class="fa fa-users"></i> About</a></p>
+    <p> <a href="#"> <i class="fa-solid fa-wrench"></i> Solution</a></p>
+    <p> <a href="#"><i class="fa-solid fa-scale-balanced"></i> Career</a></p> 
+<p> <a href="contact.html"><i class="fa-brands fa-telegram"></i> Contact</a></p>
+</div>
+  </div> 
+<i id="bar" class="fa fa-bars"></i>
+<!-- <p id="bar">bar</p> -->
+    </div>
+
+</header>
+<div class="mid-text">
+    <div class="text_content">
+    <h1>Welcome to Mao-Oak Resources Limited!</h1>
+    <span>Discover our innovative solutions tailored to meet your needs</span>
+    <p>
+
+        |Engineering, Procurement, Construction, Installation & Commissioning(EPCIC) | General Services| (Clickable)
+        </p>
+        <p>
+        
+            Fire Protection |Fire Detection | Gas Detection| Fire Systems (Clickable)
+            </p>
+            <p>    
+                |Safety| (Clickable)
+                </p>
+</div>
+
+</div>
+ <script>
+    const bar = document.getElementById('bar');
+    const active = document.getElementById("active");
+    bar.addEventListener('click',function(){
+        active.classList.toggle('show');
+    })
+ </script>
+</body>

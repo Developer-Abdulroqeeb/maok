@@ -29,7 +29,7 @@ body{
   align-items: center;
   padding:0 3.5rem;
   gap: 3rem;
-  font-size: 25px;
+  font-size: 2rem;
 }
 .year_existence img{
     width: 40vw;
@@ -134,22 +134,26 @@ body{
         margin-top:10px;
         flex-direction:column;
         gap:0;
+        gap: 3rem;
+        font-size: 15px;
+        padding:2rem;
     }
+
     .year_existence img{
         width: 90vw;
     }
     .mission-vision{
-        margin-top: 5rem;
-        padding:0 3.5rem;
+        margin-top: 1rem;
+        padding:0 2rem;
     }
     .mission-vision h1{
         font-weight: bold;
-        font-size: 3rem;
+        font-size: 1.3rem;
         color: rgb(19, 19, 81);
     }
     .mission-vision p{
-        font-size: 20px;
-    line-height:none;
+        font-size:15px;
+    line-height:1.5rem;
     }
     .Procurement{
         flex-direction:column;

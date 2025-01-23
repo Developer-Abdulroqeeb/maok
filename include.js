@@ -4,20 +4,21 @@ const header = document.getElementById('header');
 header.innerHTML = `
   <img src="image/_of_Mao-Oak_Resources_Limited-removebg-preview (1).png" alt="">
   <ul class="header_content" id="content">
-    <li><a href="">Home</a></li>
-    <li><a href="about.html">About Us</a></li>
-    <li><a href="contact.html">Contact</a></li>
-    <li><a href="#">Blog</a></li>
-    <li>Services <i class="fa fa-chevron-down"></i>
+    <li><a href="#">Home</a></li>
+    <li><a href="about.html">About </a></li>
+    
+
+    <li>Solutions <i class="fa fa-chevron-down"></i>
       <ul class="dropdown">
-        <li>Procurement Service</li>
-        <li>Manpower Service</li>
-        <li>Offshore Support Service</li>
-        <li>Equipment Leasing service</li>
+        <li>General Procurement</li>
+        <li>APCIC</li>
+        <li>fire Detection Protection</li>
+        <li>Safety</li>
       </ul>
     </li>
-    <li><a href="#">Careers</a></li>
+    <li><a href="contact.html">Contact</a></li>
   </ul>
+
   <i class="fa fa-bars" id="bars"></i>
 `;
 
