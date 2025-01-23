@@ -10,8 +10,9 @@ header.innerHTML = `
 
     <li>Solutions <i class="fa fa-chevron-down"></i>
       <ul class="dropdown">
-        <li>General Procurement</li>
-        <li>APCIC</li>
+        <li>
+       <a href="procure.html"> General Procurement</a></li>
+        <li><a href="apcic.html">APCIC</a></li>
         <li>fire Detection Protection</li>
         <li>Safety</li>
       </ul>
