@@ -11,9 +11,9 @@ header.innerHTML = `
     <li>Solutions <i class="fa fa-chevron-down"></i>
       <ul class="dropdown">
         <li>
-       <a href="procure.html"> General Procurement</a></li>
+       <a href="procure.html">General Procurement</a></li>
         <li><a href="apcic.html">EPCIC</a></li>
-        <li>fire Detection Protection</li>
+        <li>Fire Detection Protection</li>
         <li>Safety</li>
       </ul>
     </li>
