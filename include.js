@@ -13,7 +13,7 @@ header.innerHTML = `
         <li>
        <a href="procure.html">General Procurement</a></li>
         <li><a href="apcic.html">EPCIC</a></li>
-        <li>Fire Detection Protection</li>
+        <li><a href="fire.html">Fire Detection Protection</a></li>
         <li>Safety</li>
       </ul>
     </li>
