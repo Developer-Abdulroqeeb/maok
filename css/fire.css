@@ -141,6 +141,10 @@ justify-content: space-between;
 .technician img{
   width: 40%;
 }
+.dope{
+  width: 40%;
+}
+
 @media screen and (max-width:768px) {
   .company-profile{
     flex-direction: column;
