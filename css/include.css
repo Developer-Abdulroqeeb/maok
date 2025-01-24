@@ -43,6 +43,19 @@ header {
   #bars{
     display:none;
   }
+  .container{
+    max-width: 1170px;
+    margin:auto;
+   }
+   .row{
+    display: flex;
+    flex-wrap: wrap;
+   }
+   ul{
+    list-style: none;
+   }
+
+   
   /* Mobile responsive styles */
   @media screen and (max-width: 768px) {
     header {

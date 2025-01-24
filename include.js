@@ -33,3 +33,5 @@ bars.addEventListener("click", function() {
 serviceMenu.addEventListener("click", function() {
     dropdown.classList.toggle('show-dropdown');
   });
+  const footer = document.getElementById("footer");
+  footer.innerHTML = ``;
