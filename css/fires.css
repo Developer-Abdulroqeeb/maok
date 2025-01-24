@@ -130,7 +130,7 @@ flex-direction: column;
 
 .fifth-text p {
     margin-bottom: 1rem; /* Adds spacing between paragraphs */
-    text-align: justify; /* Aligns text neatly */
+ 
 }
 
 
@@ -206,20 +206,19 @@ flex-direction: column;
 .eighth .eight-text p,
 .technician .eight-text p {
     margin-bottom: 1rem; /* Space between paragraphs */
-    text-align: justify; /* Align text neatly */
+    /* Align text neatly */
 }
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    .eighth,
-    .technician {
-        flex-direction: column; /* Stack text and image vertically */
-        align-items: center; /* Center align content */
+    body{
+        font-size: 15px;
     }
+ 
 
     .eighth img,
     .technician img {
-        max-width: 80%; /* Larger image for smaller screens */
+        max-width: 100%; /* Larger image for smaller screens */
         margin-top: 20px; /* Add space above/below image */
     }
 }
@@ -237,7 +236,14 @@ flex-direction: column;
   }
   .fourth-row{
     flex-direction: column;
-
+   padding: 20px 1rem;
+   font-size: 10px;
+  }
+  .fifth-text p{
+    font-size: 14px;
+  }
+  .eight-text p{
+    font-size: 14px;
   }
   .fourth-row img{
     width: 100%;
@@ -245,7 +251,11 @@ flex-direction: column;
   .fifth-row{
     flex-direction: column;
     gap: 20px;
+    padding:30px 1rem;
  
+  }
+  .fifth-row img{
+    max-width: 100%;
   }
   .sevennth{
     flex-direction: column;
@@ -254,6 +264,7 @@ flex-direction: column;
   }
   .sevennth .letters{
     width: 95%;
+    padding:0;
   }
   .sevennth img{
     margin-top: 30px;
@@ -261,14 +272,19 @@ flex-direction: column;
   .eighth{
     flex-direction: column;
     align-items: flex-start;
-    padding: 20px;
+    justify-content: center;
+    padding: 30px 1rem;
     gap: 30px;
  
   }
   .technician{
     flex-direction: column;
+    padding: 30px 1rem;
   }
-  .technician img{
+  /* .technician img{
     width: 100%;
+  } */
+  .sevennth img{
+    max-width: 100%;
   }
 }
