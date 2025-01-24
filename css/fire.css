@@ -113,6 +113,10 @@ height: 40px;
 .eighth img{
   width: 80%;
 }
+/* :start */
+.foamsystem{
+  padding: 30px 3rem;
+}
 @media screen and (max-width:768px) {
   .company-profile{
     flex-direction: column;

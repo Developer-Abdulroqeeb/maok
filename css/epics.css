@@ -17,6 +17,7 @@ body{
     margin-top: 30px;
     display: flex;
     align-items: center;
+    gap: 3rem;
 }
 .engineering img{
     width: 40%;
@@ -25,9 +26,8 @@ body{
     font-size: 3rem;
 }
 .engineering p{
-    font-size: 20px;
-    line-height: 2rem;
-    margin-top: 20px;
+  font-size: 15px;
+  
 }
 .capabilities{
     padding:0 3.5rem;  
@@ -147,6 +147,7 @@ body{
 @media screen and (max-width:768px){
   .engineering{
     flex-direction: column;
+    gap: 1rem;
   }
   .engineering p {
     font-size: 12px;

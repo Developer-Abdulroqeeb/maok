@@ -6,22 +6,112 @@
     <title>EPCIC</title>
     <!-- <link rel="stylesheet" href="css/abouts.css"> -->
     <link rel="icon" href="image/_of Mao-Oak Resources Limited.png" type="image/x-icon">
-    <link rel="stylesheet" href="css/epic.css">
+    <link rel="stylesheet" href="css/epics.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/include.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
-    
+    <style>
+        .footer{
+    /* background-color: #24262b; */
+       background-color: rgba(36, 38, 43, 0.8);
+       padding: 70px 0;
+   }
+.engineering p{
+
+}
+
+   .footer-col{
+      width: 25%;
+      padding: 0 15px;
+   }
+   .footer-col h4{
+    font-size: 18px;
+    color: #ffffff;
+    text-transform: capitalize;
+    margin-bottom: 35px;
+    font-weight: 500;
+    position: relative;
+   }
+   .footer-col h4::before{
+    content: '';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    /* background-color: #e91e63; */
+    height: 2px;
+    box-sizing: border-box;
+    width: 50px;
+   }
+   .footer-col ul li:not(:last-child){
+    margin-bottom: 10px;
+   }
+   .footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 300;
+    color: #bbbbbb;
+    display: block;
+    transition: all 0.3s ease;
+   }
+   .footer-col ul li a:hover{
+    color: #ffffff;
+    padding-left: 8px;
+   }
+   .footer-col .social-links a{
+    display: inline-block;
+    height: 40px;
+    width: 40px;
+       background-color: rgba(255, 255, 255, 0.2);
+    margin:0 10px 10px 0;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 50%;
+    color: #ffffff;
+    transition: all 0.5s ease;
+   }
+   .footer-col .social-links a:hover{
+    color: #24262b;
+    background-color: #ffffff;
+   }
+   
+   /*responsive*/
+   @media(max-width: 767px){
+     .footer-col{
+       width: 50%;
+       margin-bottom: 30px;
+   }
+   }
+   @media(max-width: 574px){
+     .footer-col{
+       width: 100%;
+   }
+   }
+   .about_us{
+        background-image: url(image/Screenshot_23-1-2025_2735_.jpeg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 50vh;
+    }
+    .about_us h1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        padding-top: 3rem;
+    }
+    </style>
 </head>
 <body>
     <header id="header">
-        
-    </header>
 
-    <div class="img_only">
- <!-- <p></p> -->
-</div>
+    </header>
+    <div class="about_us">
+        <h1>EPCIC</h1>
+            </div>
 
 <!---->
 
@@ -246,7 +336,23 @@ deliver high quality engineering deliverables in short duration.
               <img src="image/c1a8b957c0.jpg" alt="Contact Person">
             </div>
           </div>
-        
+          <footer class="footer" id="footer"> 
+            <div class="container"> 
+                <div class="row"> <div class="footer-col"> <h4> 
+                <img src="image/_of_Mao-Oak_Resources_Limited-removebg-preview (1).png" width="100%" height="50%" alt="">
+                </h4> <!-- <ul> <li><a href="#">about us</a></li> <li><a href="#">our services</a></li>
+                 <li><a href="#">privacy policy</a></li> <li><a href="#">affiliate program</a></li> </ul> -->
+                  </div> <div class="footer-col"> <h4>Quick Links</h4> <ul> <li><a href="index.html">Home</a></li>
+                   <li><a href="about.html">About</a></li> <li><a href="#">Solution</a></li> <li><a href="contact.html">
+                   Contact</a></li> </ul> </div> <div class="footer-col"> <h4>Our Solution</h4> <ul> <li><a href="#">General
+                    Procurement</a></li> <li><a href="#">EPCIC</a></li> <li><a href="#">Fire Detection Protection</a></li>
+                     <li><a href="#">Safety</a></li> </ul> </div> <div class="footer-col"> <h4>follow us</h4>
+                      <div class="social-links"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#">
+                      <i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-instagram">
+                </i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> </div>
+                 </div> </div>
+                 </div>
+            </footer>
 </body>
 <script src="include.js"></script>
 </html>
