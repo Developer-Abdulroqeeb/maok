@@ -44,42 +44,96 @@ flex-direction: column;
 .third-row p{
     text-align: center;
 }
-.fourth-row{
+
+.fourth-row {
     display: flex;
     justify-content: space-between;
-    align-items: center;
-  padding: 20px 3rem;
-  gap: 5rem;
-  margin-top: 30px;
-}
-.fourth-row img{
-    width: 30%;
-}
-.div-text p{
-    display: flex;
-    /* align-items: center; */
-    gap: 20px;
-}
-.div-text .number{
-color: white;
-background-color: black;
-display: flex;
-align-items: center;
-justify-content: center;
-width: 40px;
-height: 40px;
-}
-.special,.solution{
+    align-items: flex-start;
+    flex-wrap: wrap;
     padding: 20px 3rem;
-    /* background-color: #093b5a; */
+    gap: 3rem;
+    margin-top: 30px;
+}
+
+.fourth-row .content {
+    flex: 1;
+    min-width: 300px;
+}
+
+
+
+.fourth-row .div-text p {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px; /* Spacing between dot and text */
+    margin: 0;
+}
+
+.fourth-row .div-text span {
+    line-height: 1.5; /* Better readability for long text */
+}
+
+.fourth-row .div-text p {
+    display: flex;
+    align-items: center;
+    gap: 10px; /* Spacing between icon and text */
+    margin: 0;
+}
+
+.fourth-row .dot {
+    flex-shrink: 0; /* Ensures the dot stays aligned */
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    font-size: 1rem;
+    font-weight: bold;
+    border-radius: 50%; /* Makes it a perfect circle */
+    margin-top: 5px; /* Aligns the dot vertically for multiline text */
+}
+
+.special {
+    padding: 20px 3rem;
     color: black;
 }
-.fifth-row{
+
+.fifth-row {
     display: flex;
-    justify-content: space-between;
-    gap: 5rem;
+    justify-content: space-between; /* Ensures space between the image and text */
+    align-items: center; /* Vertically aligns the items */
+    gap: 2rem; /* Adds spacing between the image and text */
     padding: 30px 3rem;
+    flex-wrap: wrap; /* Ensures proper alignment on smaller screens */
 }
+
+.fifth-row img {
+    max-width: 40%; /* Restricts the image width */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners to the image */
+    object-fit: cover; /* Ensures the image scales nicely */
+}
+
+.fifth-text {
+    flex: 1; /* Ensures the text takes up the remaining space */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.8rem; /* Improves readability */
+}
+
+.fifth-text h3 {
+    font-size: 1.8rem; /* Adjusts heading size */
+    margin-bottom: 1rem; /* Adds space below the heading */
+    color: #093b5a; /* Custom heading color */
+}
+
+.fifth-text p {
+    margin-bottom: 1rem; /* Adds spacing between paragraphs */
+    text-align: justify; /* Aligns text neatly */
+}
+
+
 .sixth h3{
     text-align: center;
     padding:20px;
@@ -87,63 +141,89 @@ height: 40px;
     color: white;
     font-size: 20px;
 }
-.sevennth{
+.sevennth {
     display: flex;
-    justify-content: space-between;
-  align-items: center;
-  margin-top: 30px;
-  padding: 30px;
-}
-.carriere{
-    background-color: #093b5a;
-    padding: 30px 3rem;
-}
-.sevennth .letters{
-    background-color: white;
-    color: #093b5a;
-    width: 50%;
+    justify-content: space-between; /* Ensures space between text and image */
+    align-items: center; /* Vertically aligns the items */
+    margin-top: 30px;
     padding: 30px;
+    gap: 20px; /* Adds space between text and image */
+    flex-wrap: wrap; /* Allows wrapping on smaller screens */
 }
-.eighth{
+
+.sevennth .letters {
+    /*background-color: white;*/
+    color: #093b5a;
+    flex: 1; /* Ensures text takes up equal space */
+    padding: 20px;
+    line-height: 1.8rem; /* Improves text readability */
+    /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);*/
+    max-width: 600px; /* Restricts the width for better readability */
+}
+
+.sevennth img {
+    flex: 1; /* Ensures the image takes up equal space */
+    max-width: 50%; /* Prevents the image from exceeding half the container */
+    height: auto; /* Maintains aspect ratio */
+    border-radius: 10px; /* Adds rounded corners to the image */
+    object-fit: cover; /* Ensures the image scales nicely within its box */
+}
+
+.eighth,
+.technician {
     display: flex;
-    padding: 30px 3rem;
     justify-content: space-between;
-  gap: 7rem;
-  margin-top: 40px;
+    align-items: flex-start; /* Align text and images at the top */
+    padding: 30px 3rem;
+    gap: 4rem; /* Space between text and images */
+    flex-wrap: wrap; /* Enable responsive stacking for smaller screens */
+    margin-top: 40px;
 }
-.eighth img{
-  width: 100%;
+
+.eighth img,
+.technician img {
+    max-width: 40%; /* Both images will occupy the same width relative to their container */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 10px; /* Add consistent rounding */
+    object-fit: cover; /* Ensure the image scales properly */
 }
-/* :start */
-.foamsystem{
-  padding: 30px 3rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+
+.eighth .eight-text,
+.technician .eight-text {
+    flex: 1; /* Let the text container take the remaining space */
+    color: #333; /* Dark text color for readability */
+    line-height: 1.8rem; /* Better line spacing */
 }
-.system-service{
-  padding: 30px 3rem;
- gap: 3rem;
-display: flex;
-align-items: center;
-flex-direction: row-reverse;
-justify-content: space-between;
+
+.eighth .eight-text h3,
+.technician .eight-text h3 {
+    font-size: 1.5rem; /* Adjust heading size */
+    color: #093b5a; /* Heading color */
+    margin-bottom: 0.8rem; /* Space below headings */
 }
-.system-service img{
- width: 70%;
+
+.eighth .eight-text p,
+.technician .eight-text p {
+    margin-bottom: 1rem; /* Space between paragraphs */
+    text-align: justify; /* Align text neatly */
 }
-.technician{
-  display: flex;
-  justify-content: space-between;
-  padding: 30px 3rem;
-  gap: 3rem;
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .eighth,
+    .technician {
+        flex-direction: column; /* Stack text and image vertically */
+        align-items: center; /* Center align content */
+    }
+
+    .eighth img,
+    .technician img {
+        max-width: 80%; /* Larger image for smaller screens */
+        margin-top: 20px; /* Add space above/below image */
+    }
 }
-.technician img{
-  width: 40%;
-}
-.dope{
-  width: 40%;
-}
+
 
 @media screen and (max-width:768px) {
   .company-profile{

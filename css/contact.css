@@ -1,73 +1,108 @@
-/* body{
-    background-color: green;
-} */
-.row-three{
+.row-three {
     display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
+    align-items: flex-start;
+    justify-content: center; /* Center the content horizontally */
     margin-top: 30px;
     background-color: whitesmoke;
     padding: 20px;
+    gap: 20px; /* Added gap for proper spacing between items */
 }
-.first-box{
-    margin: 20px;
+
+.first-box {
     background-color: white;
     box-shadow: 2px 2px 2px 2px rgb(238, 230, 230);
-    width: 20%;
+    width: 45%; /* Adjusted width to balance with the form */
     padding: 20px;
     border-radius: 20px;
+    box-sizing: border-box;
+    line-height: 1.8; /* Increased line-height for spacing */
+    max-width: 100%; /* Ensures it doesn't overflow */
+    overflow: hidden; /* Prevents content from spilling out */
+    margin: 0 auto; /* Centers the address card horizontally */
 }
-.first-box h3{
+
+.first-box h3 {
     color: #FF6A0C;
+    margin-bottom: 15px; /* Added margin for spacing */
 }
-.first-box .each{
-    margin-top: 10px;
+
+.first-box .each {
+    margin-top: 20px; /* Increased margin for spacing between sections */
 }
-.form_box{
+
+.first-box p {
+    margin: 10px 0; /* Added more space between each paragraph */
+    word-wrap: break-word;
+    max-width: 100%; /* Prevent text from overflowing */
+}
+
+.form_box {
     display: flex;
-    align-items: center;
-    gap: 3rem;
+    align-items: flex-start;
+    gap: 20px;
     background-color: white;
     border-radius: 20px;
     box-shadow: 2px 2px 2px 2px rgb(238, 230, 230);
-    width: 70%;
+    width: 50%; /* Increased width for form */
+    padding: 30px; /* Increased padding for form */
+    box-sizing: border-box;
 }
-.form-div form{
-    display: flex;
-    flex-direction:column ;
+
+.form_box img {
+    max-width: 100%;
+    border-radius: 20px;
 }
-form label{
+
+.form-div form {
     display: flex;
     flex-direction: column;
+    width: 100%;
 }
-form h3{
+
+form label {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+form h3 {
     color: #FF6A0C;
+    margin-bottom: 15px;
 }
-form input{
-    width: 30vw;
+
+form input, form textarea {
+    width: 100%;
     padding: 12px;
     border: 1px solid rgb(193, 188, 188);
     background-color: whitesmoke;
     border-radius: 6px;
-    color: whitesmoke;
-    /* outline: none; */
 }
-form .submit{
+
+form .submit {
     background-color: #FF6A0C;
     color: white;
     border: 1px solid #FF6A0C;
     margin-top: 20px;
+    padding: 10px;
 }
-@media screen and (max-width:768px){
-    .row-three{
-        flex-direction:column;
-    }
-    .first-box{
-        width:100%;
-    }
-    .form_box{
-        flex-direction:column;
-        width:100%;
+
+.map iframe {
+    width: 100%;
+    height: 400px;
+}
+
+@media screen and (max-width: 768px) {
+    .row-three {
+        flex-direction: column;
     }
 
-} 
+    .first-box, .form_box {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .form_box {
+        flex-direction: column;
+        gap: 0;
+    }
+}

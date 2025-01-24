@@ -6,7 +6,7 @@
     <title>Procurement</title>
     <link rel="icon" href="image/_of Mao-Oak Resources Limited.png" type="image/x-icon">
     <!-- <link rel="stylesheet" href="css/abouts.css"> -->
-    <link rel="stylesheet" href="css/safety.css">
+    <link rel="stylesheet" href="css/safe.css">
    
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
     
   <style>
        .about_us{
-        background-image: url(image/6739e06387.jpg);
+        background-image: url(image/Safety.png);
         background-repeat: no-repeat;
         background-size: cover;
         height: 50vh;
@@ -140,7 +140,7 @@
                             <li> boots… and more</li>
                         </ol>
                     </div>
-                   <img src="image/0a3610084c.jpg" alt="">
+                   
                  </div>
                  <div class="safety">
                     <div class="">
@@ -166,25 +166,28 @@
                     </div>
                     <img src="image/Screenshot_23-1-2025_21136_.jpeg" alt="" srcset="">
                  </div>
-                
-    <footer class="footer" id="footer"> 
-        <div class="container"> 
-            <div class="row"> <div class="footer-col"> <h4> 
-            <img src="image/_of_Mao-Oak_Resources_Limited-removebg-preview (1).png" width="100%" height="50%" alt="">
-            </h4> <!-- <ul> <li><a href="#">about us</a></li> <li><a href="#">our services</a></li>
-             <li><a href="#">privacy policy</a></li> <li><a href="#">affiliate program</a></li> </ul> -->
-              </div> <div class="footer-col"> <h4>Quick Links</h4> <ul> <li><a href="index.html">Home</a></li>
-               <li><a href="about.html">About</a></li> <li><a href="#">Solution</a></li> <li><a href="contact.html">
-               Contact</a></li> </ul> </div> <div class="footer-col"> <h4>Our Solution</h4> <ul> <li><a href="#">General
-                Procurement</a></li> <li><a href="#">EPCIC</a></li> <li><a href="#">Fire Detection Protection</a></li>
-                 <li><a href="#">Safety</a></li> </ul> </div> <div class="footer-col"> <h4>follow us</h4>
-                  <div class="social-links"> <a href="#"><i class="fab fa-facebook-f"></i></a> <a href="#">
-                  <i class="fab fa-twitter"></i></a> <a href="#"><i class="fab fa-instagram">
-            </i></a> <a href="#"><i class="fab fa-linkedin-in"></i></a> </div>
-             </div> </div>
-             </div>
-          
-        </footer>
+                 <div class="special">
+                    <div class="">
+                    <p>Thanks to our global capabilities, local footprint and efficient distribution systems, we are on
+                        hand to supply the safety equipment, supplies, and personal protective equipment you
+                        require with a quick turnaround. Before delivery, all rental safety equipment and protective
+                        gear is cleaned, maintained, calibrated and tested in full compliance of manufacturers’
+                        recommendations by our certified technicians.</p>
+                    </div>
+                 <center><img src="image/WhatsApp Image 2025-01-24 at 03.33.49.jpeg" alt="" srcset=""></center>   
+                 </div>
+ 
+     <div id="footer"></div>
+
+    <script>
+        fetch('footer.html')
+            .then(response => response.text())
+            .then(data => {
+                document.getElementById('footer').innerHTML = data;
+            })
+            .catch(error => console.error('Error loading footer:', error));
+    </script>
+    
         </body>
         <script src="include.js"></script>
         </html>       

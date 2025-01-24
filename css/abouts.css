@@ -12,16 +12,71 @@ body{
     font-style: normal;
 }
 
-.synopsis{
+
+.synopsis {
     margin-top: 5rem;
     display: flex;
-  justify-content:space-between;
-  padding:0 3.5rem;
-  gap: 3rem;
+    justify-content: space-between;
+    padding: 0 3.5rem;
+    gap: 3rem;
+    align-items: center; /* Ensures the content aligns vertically in the center */
 }
-.synopsis_image img{
+
+.synopsis-text {
+    flex: 1;
+}
+
+.synopsis_image {
+    flex: 1;
+}
+
+.synopsis_image img {
     width: 50vw;
+    height: auto;
 }
+
+.synopsis-text .dot {
+    font-size: 20px;  /* Adjust size to match the text */
+    margin-right: 10px;  /* Space between the dot and the text */
+    color: black;  /* Dot color */
+}
+
+/* Add styles for the Core Values heading */
+.core-values-heading {
+    font-size: 2rem;   /* Adjust the size of the heading */
+    font-weight: bold; /* Make it bold */
+    color: rgb(19, 19, 81); /* Change the color of the heading */
+    margin-top: 2rem;  /* Add space above the heading */
+    margin-bottom: 1rem; /* Add space below the heading */
+}
+
+.core-values-list {
+    font-size: 20px;
+    line-height: 1.8rem;
+    padding-left: 1rem; /* Indent the list */
+    margin-top: 1rem; /* Add space at the top */
+    color: #333; /* Set text color to a dark shade for readability */
+}
+
+.dot {
+    color: #FBDAA1; /* Set dot color to match the theme */
+    font-size: 24px; /* Increase the size of the dot */
+    margin-right: 12px; /* Space between the dot and the text */
+}
+
+.core-values-list br {
+    margin-bottom: 10px; /* Add spacing between lines */
+}
+
+/* Optional: Add hover effect on each bullet point */
+.core-values-list span.dot:hover {
+    color: #000; /* Change dot color when hovered */
+    cursor: pointer;
+}
+
+
+
+
 .year_existence{
     margin-top: 5rem;
     display: flex;
@@ -34,39 +89,55 @@ body{
 .year_existence img{
     width: 40vw;
 }
-.mission-vision{
+
+.mission-vision {
     margin-top: 5rem;
-    padding:0 3.5rem;
+    padding: 0 3.5rem;
 }
-.mission-vision h1{
+
+.mission-vision h1 {
     font-weight: bold;
     font-size: 3rem;
     color: rgb(19, 19, 81);
 }
-.mission-vision p{
+
+.mission-vision p {
     font-size: 20px;
     line-height: 2.2rem;
+    /*margin-bottom: -10px*/
 }
-.Procurement{
-    margin: 3rem 0;
-    
-    display: flex;
-    align-items: center;
-    /* justify-content: space-between; */
-}
-.Procurement ul{
-    list-style-type: none;
-    background-color:#fbdda1;
-    padding:30px 20px;
-    display: flex;
-    flex-direction: column;
-    gap: 1rem;
+
+/*.Procurement {*/
+/*    margin: 3rem 0;*/
+/*    display: flex;*/
+/*    align-items: center;*/
+/*    justify-content: space-between;*/
+/*}*/
+
+/*.Procurement ul {*/
+/*    list-style-type: none;*/
+/*    padding: 30px 20px;*/
+/*    display: flex;*/
+/*    flex-direction: column;*/
+/*    gap: 1rem;*/
+/*    width: 40vw;*/
+/*    background-color: #fbdda1;*/
+/*}*/
+
+/*.Procurement ul li::before {*/
+/*    content: '•';*/
+/*    margin-right: 10px;  */
+/*    color: #000;  */
+/*}*/
+
+/*.Procurement img {
     width: 40vw;
-}
-.Procurement img{
-    width: 40vw;
-    height: 18.5vw;
-}
+   height: 18.5vw;
+    object-fit: cover; 
+    border-radius: 10px;
+}*/
+
+
 .engineering{
     padding:0 3.5rem;
     margin-top: 30px;

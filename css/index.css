@@ -21,11 +21,15 @@ header img{
    height: 90vh;
    margin-top:30px;
 }
+/* start */
 .mid-text h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
     border: 2px solid white;
     padding: 7px;
-    font-size: 18px;
+    font-size: 2rem;
     text-align: center;
     text-transform: uppercase;
     margin-bottom:2rem;
@@ -36,7 +40,7 @@ header img{
      border:1px solid rgb(238, 230, 290); */
 }
 .text_content p{
-    background-color:black;
+    background-color:rgb(168, 146, 146);
     color: rgb(203, 26, 26);
     text-align:center;
     padding:10px;
@@ -45,16 +49,25 @@ header img{
     color:white;
 }
 .text_content span{
-    box-shadow:2px 2px 2px 2px rgb(238, 230, 290);
+    box-shadow:1px 1px 1px 1.2px rgb(238, 230, 290);
     text-align:center;
     padding:10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    /* background-color:2px 2px 2px 2px rgb(238, 230, 290); */
-    /* margin:2rem 9rem; */
+   font-size: 20px;
     color: white;
     font-weight: bold;
+    /* width:0%; */
+    width: 50%;
+}
+em{
+    background-color:rgb(168, 146, 146);
+    color: rgb(203, 26, 26);
+    padding:10px 20px;
+    margin-top: 30px;
+
+}
+
+em:hover{
+    color:white;
 }
 .active{
     display: none;
@@ -62,7 +75,9 @@ header img{
 .active.show{
     display: block;
   position:absolute;
-    padding:0 10px 0 10px
+    padding:0 10px 0 12px;
+    background-color: rgb(74, 73, 73);
+    color: white;
 }
 .home{  
     display: flex;
@@ -76,18 +91,22 @@ header img{
 .home-content p {
     display: flex;
     align-items: center;
-    gap: 7px;
+    gap: 15px;
     font-size: 12px;
-    background-color: rgba(255, 255, 255, 0.2); /* Light background color */
+    /* background-color: rgba(255, 255, 255, 0.2); */
     padding: 5px; /* Optional, if you want space around the text */
+    color: white;
 }
 
   
 .home-content p a{
 
-    color:black;
+    color:white;
     text-decoration:none;
     
+}
+.home-content p a:hover{
+    color: rgb(203, 26, 26);
 }
 .home-content p i{
     font-size: 10px;
@@ -117,5 +136,11 @@ header img{
         margin: 0;
         padding: 10px;
         font-size: 10px;
+    }
+    .mid-text h1{
+        font-size: 1rem;
+    }
+    .text_content span {
+        font-size: 9px;
     }
 }
