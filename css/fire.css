@@ -5,6 +5,7 @@ body{
    padding: 0;
    margin: 0;
    box-sizing: 0;
+   overflow-x: hidden;
 }
 .profile {
    display: flex;
@@ -117,12 +118,14 @@ height: 40px;
     flex-direction: column;
     align-items: flex-start;
     gap: 10px;
+    padding: 10px;
   }  
   .company-profile img{
     width: 100%;
   }
   .fourth-row{
     flex-direction: column;
+    padding: 10px;
   }
   .fourth-row img{
     width: 100%;
@@ -130,10 +133,12 @@ height: 40px;
   .fifth-row{
     flex-direction: column;
     gap: 20px;
+    padding: 10px;
   }
   .sevennth{
     flex-direction: column;
     align-items: flex-start;
+    padding: 10px;
   }
   .sevennth .letters{
     width: 95%;
@@ -146,5 +151,6 @@ height: 40px;
     align-items: flex-start;
     padding: 20px;
     gap: 30px;
+    padding: 10px;
   }
 }
