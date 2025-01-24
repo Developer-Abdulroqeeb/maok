@@ -16,6 +16,7 @@ header.innerHTML = `
 
         <li><a href="fire.html">Fire Detection Protection</a></li>
         <li><a href="safety.html">Safety</a></li>
+          <li><a href="gas.html">Gas Detection</a></li>
       
       </ul>
     </li>
