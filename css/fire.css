@@ -2,7 +2,9 @@
 body{
     font-family: "Poppins", serif;
     /* background-color: green; */
-    overflow-x: hidden;
+   padding: 0;
+   margin: 0;
+   box-sizing: 0;
 }
 .profile {
    display: flex;
@@ -100,7 +102,16 @@ height: 40px;
     width: 50%;
     padding: 30px;
 }
-
+.eighth{
+    display: flex;
+    padding: 30px 3rem;
+    justify-content: space-between;
+  gap: 7rem;
+  margin-top: 40px;
+}
+.eighth img{
+  width: 80%;
+}
 @media screen and (max-width:768px) {
   .company-profile{
     flex-direction: column;
@@ -129,5 +140,11 @@ height: 40px;
   }
   .sevennth img{
     margin-top: 30px;
+  }
+  .eighth{
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+    gap: 30px;
   }
 }

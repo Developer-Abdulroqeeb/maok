@@ -50,7 +50,7 @@ form input{
     background-color: whitesmoke;
     border-radius: 6px;
     color: whitesmoke;
-    outline: none;
+    /* outline: none; */
 }
 form .submit{
     background-color: #FF6A0C;
